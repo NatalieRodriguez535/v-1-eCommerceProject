@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/*the whole pages style  */
+body {
+  font-family: 'Indie Flower', cursive;
+  color: black;
+  overflow-x: hidden;
+}
+
+/* NAV BAR starts here*/
+.navbar {
+  width: 100%;
+  /* This defines a fle.hero-container1 container; inline or block depending on the given value. It enables a flex context for all its direct children   */
+  display: flex;
+  justify-content: center;
+  /* made the bullet point go away   */
+  list-style-type: none;
+}
+
+.current {
+  color: gray;
+}
+
+/*style the nav bar  */
+.navbar a {
+  text-decoration: none;
+
+  font-size: 30px;
+}
+
+.not-current {
+  color: black;
+}
+
+/* put space inbetween my nav bar */
+.navbar li {
+  /* top right bottom left   */
+  padding: 20px 20px 20px 20px;
+}
+
+.navbar a:hover {
+  color: rgb(19, 122, 28);
+}
+
+/* HERO TEXTS STARTS HERE */
+/* unvi selector to add to all tags in html that are with in the body */
+/* position of the background pic */
+.home-hero-container {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  /*   flex box directs flex items are placed in the flex container */
+  justify-content: center;
+  align-items: center;
+  background: url('https://cdn.shopify.com/s/files/1/2528/3612/files/HPS-01-01_1800x1000.jpg?v=1579730588');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /*  property sets whether a background image scrolls with the rest of the page fixed makes it not moove with the page  */
+  background-position: 50% 50%;
+  /*  used to change the postion of my image bc it was only showing the top of my pic  */
+}
+
+.home-hero-text-container {
+  font-size: 250px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.shop-all-hero-container {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  /*   flex box directs flex items are placed in the flex container */
+  justify-content: center;
+  align-items: center;
+  background: url('https://images.unsplash.com/photo-1446292532430-3e76f6ab6444?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /*  property sets whether a background image scrolls with the rest of the page fixed makes it not moove with the page  */
+  background-position: 50% 50%;
+  /*  used to change the postion of my image bc it was only showing the top of my pic  */
+}
+
+/* ALL HEROS */
+.shop-all-hero-text-container {
+  font-size: 250px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.indoor-hero-container {
+  display: flex;
+  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1601112240348-b2e87c7ea616?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  width: 500px;
+  height: 800px;
+  background-repeat: no-repeat;
+  margin-left: 25px;
+}
+
+.indoor-hero-text-container {
+  text-align: center;
+  position: absolute;
+  font-size: 75px;
+  margin-top: 15rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.outdoor-hero-container {
+  display: flex;
+  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1559749284-7a6971fd798e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  width: 500px;
+  height: 800px;
+  background-repeat: no-repeat;
+  margin-left: 25px;
+}
+
+.outdoor-hero-text-container {
+  text-align: center;
+  position: absolute;
+  font-size: 75px;
+  margin-top: 15rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+/* plant-variety-container text starts */
+
+.plant-variety-header-container {
+  font-size: 55px;
+  text-align: center;
+  margin-top: 2rem;
+  text-shadow: 2px 2px rgb(19, 122, 28);
+}
+
+/* indoor and outdoor starts */
+.indoor-and-outdoor-container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.indoor-and-outdoor-button-container {
+  text-align: center;
+  position: absolute;
+  margin-top: 20rem;
+  height: 40px;
+  font-size: 30px;
+  background-color: rgb(19, 122, 28);
+}
+
+/* IMG FOR POPULAR PRODUCTS */
+
+.popular-text-container {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 2px 2px rgb(19, 122, 28);
+}
+
+.popular-img-container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.popular-img-single-container {
+  font-size: 30px;
+  width: 33.3%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.popular-img-button {
+  font-size: 25px;
+  margin-top: 1rem;
+  color: black;
+  background-color: rgb(19, 122, 28);
+}
+
+/* SHOP ALL STARTS HERE */
+.shop-all-low-price-text-header {
+  font-size: 55px;
+  text-align: center;
+  margin-top: 2rem;
+  text-shadow: 2px 2px rgb(19, 122, 28);
+}
+
+.shop-all-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+.shop-all-row-one-container {
+  display: flex;
+
+}
+
+.shop-all-row-two-container {
+  display: flex;
+
+}
+
+.shop-all-row-three-container {
+  display: flex;
+
+}
+
+.shop-all-row-four-container {
+  display: flex;
+
+}
+
+.row-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.3%;
+}
+
+.row-single img {
+  height: 300px;
+  width: 300px;
+  margin: 15px 0px;
+  object-fit: contain;
+}
+
+.shop-all-money-text-container {
+  text-align: center;
+  color: rgb(19, 122, 28);
+  font-size: 25px;
+}
+
+.bold-text {
+  font-size: 35px;
+  text-decoration: underline rgb(19, 122, 28);
+}
+
+.shop-all-img-button {
+  margin-top: 20px;
+  font-size: 25px;
+  color: black;
+  background-color: rgb(19, 122, 28);
+  width: 110px;
+}
+
+.shop-all-h2 {
+  text-shadow: 1px 1px rgb(19, 122, 28);
+}
+
+/* FORM STARTS HERE */
+
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.form-container label {
+  margin: 10px 0px;
+}
+
+.form-container input {
+  padding: 20px 20px;
+  background-color: lightgray;
+}
+
+.input-button {
+  margin-top: 20px;
+}
+
+/* FOOTER STARTS HERE */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  height: 55px;
+  background-color: rgb(19, 122, 28);
+}
+
+.footer-socialmedia i {
+  font-size: 35px;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+
+}
+
+.footer-socialmedia a {
+  color: black;
+}
+
+.copyright {
+  color: white;
+}
+
+
+/* media queries starts here */
+@media only screen and (min-width:400px) and (max-width:800px) {
+
+  /* NAV STARTS HERE */
+  .navbar {
+    height: 70px;
+  }
+
+  /* HOME HERO STARTS HERE */
+  .home-hero-container {
+    height: 70vh;
+  }
+
+  .home-hero-text-container {
+    font-size: 100px;
+  }
+
+  /* SELECT VARIETY STARTS HERE */
+  .plant-variety-header-container {
+    font-size: 30px;
+  }
+
+  /* INDOOR AND OUTDOOR HOME STARTS HERE */
+
+  .indoor-hero-container {
+    width: 350px;
+    height: 600px;
+  }
+
+  .outdoor-hero-container {
+    width: 350px;
+    height: 600px;
+    margin-right: 25px;
+  }
+
+  .indoor-hero-text-container {
+    font-size: 60px;
+  }
+
+  .outdoor-hero-text-container {
+    font-size: 55px;
+  }
+
+  .indoor-and-outdoor-button-container {
+    font-size: 20px;
+  }
+
+  /* POPULAR PRODUCTS STARTS HERE */
+
+  .popular-text-container {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .popular-img-button {
+    font-size: 20px;
+  }
+
+  .footer {
+    height: 40px;
+  }
+
+  .footer-socialmedia i {
+    font-size: 25px;
+  }
+
+  /* SHOP ALL HERO STARTS HERE */
+
+  .shop-all-hero-container {
+    height: 70vh;
+  }
+
+  .shop-all-hero-text-container {
+    font-size: 100px;
+  }
+
+  .bold-text {
+    font-size: 22px;
+  }
+
+  /* shop all imgs and text start here  */
+
+  .row-single img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .form-container label {
+    font-size: 20px;
+  }
+
+  .shop-all-h2 {
+    font-size: 25px;
+  }
+
+  .input-button {
+    margin-bottom: 60px;
+  }
+
+  .shop-all-img-button {
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width:400px) {
+
+  /* NAV STARTS HERE */
+  .navbar a {
+    font-size: 20px;
+  }
+  .current{
+    color: rgb(41, 38, 38);
+  }
+
+  /* home hero starts here */
+  .home-hero-text-container {
+    font-size: 80px;
+  }
+
+  .home-hero-container {
+    height: 500px;
+  }
+
+  /* select variety text starts here */
+  .plant-variety-header-container {
+    font-size: 25px;
+  }
+
+  /* INDOOR AND OUTDOOR STARTS HERE */
+  .indoor-hero-container {
+    height: 600px;
+  }
+
+  .indoor-hero-text-container {
+    font-size: 40px;
+  }
+
+  .outdoor-hero-container {
+    height: 600px;
+    margin-right: 25px;
+  }
+
+  .outdoor-hero-text-container {
+    font-size: 35px;
+  }
+
+  .indoor-and-outdoor-button-container {
+    font-size: 15px;
+    margin-top: 450px;
+  }
+
+  /* POPULAR PRODUCTS STARTS HERE */
+  .popular-text-container {
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .popular-img-single-container img {
+    height: 100px;
+  }
+
+  .popular-text-ptag {
+    font-size: 15px;
+  }
+
+  .popular-img-button {
+    font-size: 15px;
+  }
+
+  /* footer starts here */
+  .footer {
+    height: 4vh;
+  }
+
+  .footer-socialmedia i {
+    font-size: 15px;
+  }
+
+  /* shop all hero starts here */
+  .shop-all-hero-container {
+    height: 500px;
+  }
+
+  .shop-all-hero-text-container {
+    font-size: 80px;
+  }
+
+  /* SHOP ALL IMGS AND TEXT STARTS HERE */
+  .shop-all-row-one-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+
+  .shop-all-row-two-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-all-row-three-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-all-row-four-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row-single img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .bold-text {
+    font-size: 20px;
+  }
+
+  .shop-all-money-text-container {
+    font-size: 30px;
+  }
+
+  .shop-all-low-price-text-header {
+    font-size: 35px;
+  }
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css" type="text/css">
+  <meta name="description" content="Plant Shop">
+  <script src="https://kit.fontawesome.com/c2daef2cd3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header> <nav>
+    <ul class="navbar">
+      <li><a href="index.html" class="not-current">Home</a></li>
+      <li><a href="shopall.html" class="not-current">Shop All</a></li>
+      <li><a href="contact.html" class="current">Contact</a></li>
+    </ul>
+  </nav></header>
+  <!--    form-text is given to style in css-->
+  <main class="form-text">
+    <form class="form-container">
+      <!--   the form element is a container for different types of input elements     -->
+      <label for="fname">First name:</label>
+      <!--    <input> element is the most used form element.An <input> element can be displayed in many ways, depending on the type attribute    -->
+      <input type="text" id="fname" name="fname" placeholder="Exp. Natalie" required />
+
+      <!--     <input type="text">Displays a single-line text input field-->
+      <label for="lname">Last name:</label>
+      <!--    The <label> tag defines a label for many form elements.    -->
+      <input type="text" id="lname" name="lname" placeholder="Exp. Rodriguez" required />
+
+      <label for="pnumber">Phone number:</label>
+      <input type="text" id="pnumber" name="pnumber" placeholder="Exp. 803-554-1234 " required />
+
+      <label for="email1">Email:</label>
+      <input type="text" id="email1" name="email1" placeholder="Exp. Plant.Grow.123@gmail.com" required />
+
+      <label for="comment">Comments:</label>
+      <input type="text" id="comment" placeholder="Write Us Here!" required />
+
+      <!--   Sumbmit button but doesnt go anywhere   -->
+      <input class="input-button" type="submit" value="Submit" />
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-socialmedia">
+      <a aria-label="Twitter" href="https://twitter.com/" target="blank"><i class="fab fa-twitter-square"></i></a>
+      <a aria-label="Instagram" href="https://www.instagram.com/?hl=en" target="blank"><i
+          class="fab fa-instagram-square"></i></a>
+      <a aria-label="Facebook" href="https://www.facebook.com/" target="blank"><i
+          class="fab fa-facebook-square"></i></a>
+    </div>
+
+    <div>
+      <p class="copyright">&copy; 2020</p>
+    </div>
+  </footer>
+</body>
+
+</html>
